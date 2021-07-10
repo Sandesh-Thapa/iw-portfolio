@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sandesh Thapa | Github</title>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fab fa-github"></i> Sandesh Thapa Github Status</h1>
+        <a id="githubLink" target="_blank">View on Github</a>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="avatar">
+                    <img id="githubPic" alt="Sandesh Thapa">
+                </div>
+                <div class="info">
+                    <h3 id="fullname"></h3>
+                    <h5 id="username"></h5>
+                    <div class="follow">
+                        <i class="fas fa-users"></i>
+                        <h3><span id="followers"></span>Followers</h3>
+                        <h3><span id="following"></span>Following</h3>
+                    </div>
+                    <h3><i class="fas fa-map-marker-alt"></i>&nbsp;<span id="location"></span></h3>
+                </div>
+            </div>
+            <div class="right">
+                <div class="repo-wrapper">
+                    <h3>Public Repositories</h3>
+                    <div id="reposTable">
+                        <table>
+                          <thead>
+                            <tr class="table-head">
+                              <th>Project Title</th>
+                              <th>Github Url</th>
+                              <th>Language Used</th>
+                              <th>View Live</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tableHead">
+                            <!-- Dynamically loaded from github users API -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
